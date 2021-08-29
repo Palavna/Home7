@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/batn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="14dp"
+        android:text="save"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_but1"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/batn"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layotden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/bg_layot2"
+        android:elevation="8dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="88dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="88dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/email" />
+
+        <TextView
+            android:id="@+id/gde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_papka"
+            android:drawableEnd="@drawable/ic_strelkavpravo"
+            android:drawablePadding="8dp"
+            android:text="Где"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_account"
+            android:drawableEnd="@drawable/ic_strelkavpravo"
+            android:drawablePadding="8dp"
+            android:text="Домашнее"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/gde"
+            app:layout_constraintTop_toBottomOf="@id/gde" />
+
+        <TextView
+            android:id="@+id/zadan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_rupor"
+            android:drawableEnd="@drawable/ic_strelkavpravo"
+            android:drawablePadding="8dp"
+            android:text="Задание"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/dom"
+            app:layout_constraintTop_toBottomOf="@id/dom" />
+
+        <TextView
+            android:id="@+id/mudak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_preview"
+            android:drawableEnd="@drawable/ic_strelkavpravo"
+            android:drawablePadding="8dp"
+            android:text="Мудак"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/zadan"
+            app:layout_constraintTop_toBottomOf="@id/zadan" />
+
+        <TextView
+            android:id="@+id/vopros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_error"
+            android:drawableEnd="@drawable/ic_strelkavpravo"
+            android:drawablePadding="8dp"
+            android:text="Вопрос?"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/mudak"
+            app:layout_constraintTop_toBottomOf="@id/mudak" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imeg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="96dp"
+        android:elevation="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/denis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/den" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

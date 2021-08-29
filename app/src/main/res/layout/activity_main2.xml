@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E80D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Редактировать профиль"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/pochta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
+        android:text="Почта"
+        android:textColor="#AAA5A5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/bg_email"
+        android:elevation="6dp"
+        android:hint="Введите email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#1B1A1A"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pochta" />
+
+    <TextView
+        android:id="@+id/imy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
+        android:text="Имя и Фамилия"
+        android:textColor="#AAA5A5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/login" />
+
+    <EditText
+        android:id="@+id/famil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/bg_email"
+        android:elevation="6dp"
+        android:hint="Введите имя"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#222121"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imy" />
+
+    <Button
+        android:id="@+id/sohran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/bg_btsoh"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Сохранить"
+        app:layout_constraintTop_toBottomOf="@id/famil" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
